@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>獸醫偵探社：科技辦案 — 五天課表</title>
+<style>
+  body { font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif; max-width: 1200px; margin: 30px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+  h1 { text-align: center; font-size: 1.5em; border-bottom: 2px solid #2c5f2d; padding-bottom: 10px; }
+  .summary { background: #f5f9f5; padding: 15px 20px; border-left: 4px solid #2c5f2d; margin: 20px 0; }
+  .summary p { margin: 5px 0; font-size: 0.95em; }
+  table.schedule { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.9em; }
+  table.schedule th, table.schedule td { border: 1px solid #ccc; padding: 8px 6px; text-align: center; vertical-align: top; }
+  table.schedule th { background: #2c5f2d; color: white; }
+  table.schedule td.time { background: #f0f0f0; font-weight: bold; width: 90px; font-size: 0.85em; }
+  table.schedule td.lunch { background: #fff8e1; color: #888; font-style: italic; }
+  table.schedule td.lesson { text-align: left; padding: 10px 8px; }
+  table.schedule td.day-theme { background: #e8f5e9; font-weight: bold; padding: 10px; }
+  .lesson-name { font-weight: bold; color: #1a3d1e; display: block; margin-bottom: 3px; }
+  .lesson-meta { font-size: 0.8em; color: #666; }
+  .tag { display: inline-block; padding: 1px 5px; border-radius: 3px; font-size: 0.75em; margin-left: 3px; }
+  .tag-animal { background: #fff3e0; color: #e65100; }
+  .tag-diy { background: #e8f5e9; color: #1b5e20; }
+  .legend { display: flex; gap: 20px; margin: 15px 0; font-size: 0.88em; }
+  .legend span { display: inline-block; padding: 3px 10px; border-radius: 3px; }
+  @media print { body { max-width: 100%; margin: 10px; } table.schedule { font-size: 0.75em; } }
+  @media (max-width: 768px) { table.schedule { font-size: 0.75em; } table.schedule td, table.schedule th { padding: 4px; } }
+</style>
+</head>
+<body>
+
+<h1>獸醫偵探社：科技辦案<br><small style="font-size:0.6em;color:#666">五天整天課表</small></h1>
+
+<div class="summary">
+  <p><strong>對象：</strong>國小一年級至國小六年級</p>
+  <p><strong>總時數：</strong>五天 × 每日 6 小時 = 30 小時</p>
+  <p><strong>每日時段：</strong>09:00-12:00（上午）／ 12:00-14:00（午休）／ 14:00-17:00（下午）</p>
+  <p><strong>五天動物：</strong>D1 兩棲＋小型爬蟲 · D2 小型哺乳類 · D3 蛇類 · D4 犬類 · D5 陸龜＋中型蜥蜴</p>
+</div>
+
+<div class="legend">
+  <span class="tag tag-animal">活體</span> 活體動物互動
+  <span class="tag tag-diy">DIY</span> 手作實驗
+</div>
+
+<table class="schedule">
+  <tr>
+    <th>時間</th>
+    <th>Day 1<br>野外偵查日</th>
+    <th>Day 2<br>微觀偵查日</th>
+    <th>Day 3<br>感官偵查日</th>
+    <th>Day 4<br>臨床偵查日</th>
+    <th>Day 5<br>結案日</th>
+  </tr>
+  <tr>
+    <td class="time">09:00<br>│<br>10:00</td>
+    <td class="lesson">
+      <span class="lesson-name">偵探社成立</span>
+      <span class="lesson-meta">分組＋偵探裝備發放</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">病毒與細菌</span>
+      <span class="lesson-meta">微觀偵查＋顯微鏡觀察</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">血液分析</span>
+      <span class="lesson-meta">色彩辨識＋分層實驗</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">體溫與心跳</span>
+      <span class="lesson-meta">生命密碼＋自我測量</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">急救入門</span>
+      <span class="lesson-meta">首席偵探交接儀式</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="time">10:00<br>│<br>11:00</td>
+    <td class="lesson">
+      <span class="lesson-name">動物足跡採集與追蹤</span>
+      <span class="lesson-meta">足跡辨識＋石膏拓印</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">檢體採集：採證大師</span>
+      <span class="lesson-meta">四大檢體類型實作 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">動物的叫聲</span>
+      <span class="lesson-meta">聲波科學＋叫聲解碼</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">聽診器實作</span>
+      <span class="lesson-meta">心音判讀 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">超音波／X光影像</span>
+      <span class="lesson-meta">骨骼辨識＋影像判讀 <span class="tag tag-animal">活體</span></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="time">11:00<br>│<br>12:00</td>
+    <td class="lesson">
+      <span class="lesson-name">獸醫辦案裝備：吹箭</span>
+      <span class="lesson-meta">氣壓原理＋射靶練習 <span class="tag tag-diy">DIY</span></span>
+    </td>
+    <td class="lesson" rowspan="1" style="background:#fafafa;">
+      <span class="lesson-meta">（延伸活動）</span>
+    </td>
+    <td class="lesson" rowspan="1" style="background:#fafafa;">
+      <span class="lesson-meta">（延伸活動）</span>
+    </td>
+    <td class="lesson" rowspan="1" style="background:#fafafa;">
+      <span class="lesson-meta">（延伸活動）</span>
+    </td>
+    <td class="lesson" rowspan="1" style="background:#fafafa;">
+      <span class="lesson-meta">（延伸活動）</span>
+    </td>
+  </tr>
+  <tr>
+    <td class="time">12:00<br>│<br>14:00</td>
+    <td class="lunch" colspan="5">午餐與午休</td>
+  </tr>
+  <tr>
+    <td class="time">14:00<br>│<br>15:30</td>
+    <td class="lesson">
+      <span class="lesson-name">理學檢查實作</span>
+      <span class="lesson-meta">四大項＋分站觀察 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">棲地水質檢測</span>
+      <span class="lesson-meta">五大指標＋淨水器 <span class="tag tag-diy">DIY</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">蛇類感官世界</span>
+      <span class="lesson-meta">紅外線／嗅覺／鱗片 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">犬類營養與疾病</span>
+      <span class="lesson-meta">飼料解讀＋常見疾病 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">爬蟲營養學</span>
+      <span class="lesson-meta">龜殼解剖＋UVB／鈣質 <span class="tag tag-animal">活體</span></span>
+    </td>
+  </tr>
+  <tr>
+    <td class="time">15:30<br>│<br>17:00</td>
+    <td class="lesson">
+      <span class="lesson-name">獵食行為觀察</span>
+      <span class="lesson-meta">獵食策略比較 <span class="tag tag-animal">活體</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">交叉比對分析</span>
+      <span class="lesson-meta">科學推理＋假設驗證</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">鱗片＋擬態辨識</span>
+      <span class="lesson-meta">拓印＋卡牌遊戲 <span class="tag tag-animal">活體</span> <span class="tag tag-diy">DIY</span></span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">動物福利與飼養責任</span>
+      <span class="lesson-meta">五大自由＋領養教育</span>
+    </td>
+    <td class="lesson">
+      <span class="lesson-name">綜合診斷挑戰</span>
+      <span class="lesson-meta">案例推理＋知識王 PK</span>
+    </td>
+  </tr>
+</table>
+
+<div class="summary">
+  <p><strong>課程特色：</strong></p>
+  <p>✓ 每天安排不同活體動物互動（兩棲／爬蟲／哺乳／犬類／蛇類）</p>
+  <p>✓ 每天至少一項 DIY 手作（吹箭／淨水器／鱗片拓印等）</p>
+  <p>✓ 涵蓋獸醫核心科技：足跡採集、檢體分析、血液判讀、聽診、X光／超音波</p>
+  <p>✓ 結合科學偵探情境，培養觀察、紀錄、推理三大能力</p>
+</div>
+
+<p style="text-align:center; margin-top:30px; color:#888; font-size:0.85em;">SEC × 中國文化大學推廣教育部</p>
+
+</body>
+</html>
